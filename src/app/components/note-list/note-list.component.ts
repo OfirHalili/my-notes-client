@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Subject } from 'rxjs';
 import { Note } from 'src/app/common/note';
 import { NoteService } from 'src/app/services/note.service';
 
@@ -10,6 +11,7 @@ import { NoteService } from 'src/app/services/note.service';
 })
 export class NoteListComponent implements OnInit {
   notes: Note[] = [];
+  selectedNoteContent: Subject<string> = new Subject<string>();
   constructor(private notesService: NoteService,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -31,5 +33,8 @@ export class NoteListComponent implements OnInit {
     const userId: string = this.route.snapshot.paramMap.get('user-id');
     this.notesService.getNotesByUserId(userId).subscribe( data => this.notes = data);
   }
-
+updateMainNote(note: Note){
+  console.log(`hello ${note.noteContent}`);
+  this.selectedNoteContent.next(note.noteContent);
+}
 }

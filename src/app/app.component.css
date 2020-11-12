@@ -5,7 +5,7 @@
     grid-template-columns: 25% 50% auto;
     grid-template-areas: "header header header"
                         " . head-line . "
-                          "side main . "
+                          "side side side"
                           " . . . "
                           "footer footer footer";
     grid-gap: 1rem 2.5rem;
@@ -13,6 +13,11 @@
 }
 .menu-bar{
     grid-area: header;
+}
+.side-notes{
+    grid-area: side;
+    min-width: 8rem;
+
 }
 .footer{
     grid-area: footer;

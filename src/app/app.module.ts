@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NoteDisplayComponent } from './components/note-display/note-display.component';
 
 const routes: Routes = [
   { path: 'all-notes/:user-id', component: NoteListComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
     AppComponent,
     NoteListComponent,
     MenuBarComponent,
-    FooterComponent
+    FooterComponent,
+    NoteDisplayComponent
   ],
   imports: [
     BrowserModule,

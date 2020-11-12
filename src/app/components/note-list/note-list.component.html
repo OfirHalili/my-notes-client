@@ -1,6 +1,14 @@
-<p>note-list works!</p>
 <div>
-    <p *ngFor="let note of notes">
-        {{note.userId}}: {{note.noteContent}}
-    </p>
+    <nav>
+         <ul class="side-note__list" >
+             <li class="small-note" *ngFor=" let note of notes" >
+                 <a  (click)="this.updateMainNote(note)">
+                     <p class = "note-content"> 
+                         {{note.userId}}: {{note.noteContent}}
+                     </p>
+                 </a>
+             </li>
+         </ul>
+    </nav>
+    <app-note-display [note]="this"></app-note-display>
 </div>

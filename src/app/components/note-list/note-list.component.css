@@ -1,0 +1,35 @@
+.side-notes nav{
+    height: 100%;
+}
+.side-note__list{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+    overflow: scroll;
+}
+.small-note{
+    min-height: 18%;
+    height: 3rem;
+    width: 90%;
+    margin: 0.2rem ;
+    padding: 0.4rem 0.2rem 0 0.6rem ;
+    overflow: scroll;
+    border-radius: 15%;
+    border: 1px solid rgb(255 255 255 / 54%);
+}
+.small-note:hover,
+.small-note:active{
+    background-color: rgb(253 202 176 / 55%);
+}
+.side-note__list .small-note a{
+    text-decoration: none;
+}
+.note-content{
+    color: white;
+    margin: 0;
+}
