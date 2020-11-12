@@ -11,3 +11,6 @@
     grid-gap: 1rem 2.5rem;
     
 }
+.menu-bar{
+    grid-area: header;
+}

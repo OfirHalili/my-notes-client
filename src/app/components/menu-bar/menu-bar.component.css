@@ -1,0 +1,22 @@
+.main-header{
+    background-color: rgb(86 58 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.main-nav__items{
+    display: flex;
+    list-style: none;
+}
+.main-nav__item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active{
+    color: white;
+    text-decoration: underline;
+}
