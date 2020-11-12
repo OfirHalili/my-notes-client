@@ -1,0 +1,13 @@
+.home-page-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3.5rem 2.5rem auto 2.5rem 4.5rem ;
+    grid-template-columns: 25% 50% auto;
+    grid-template-areas: "header header header"
+                        " . head-line . "
+                          "side main . "
+                          " . . . "
+                          "footer footer footer";
+    grid-gap: 1rem 2.5rem;
+    
+}

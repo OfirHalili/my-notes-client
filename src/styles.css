@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    height: 100%;
+}
+ body{
+    height: 100%;
+    margin: 0;
+    background-color: rgb(212 151 121);
+    /* overflow: hidden; */
+    background: url("assets/thinking.jpg") center/cover no-repeat border-box;
+    background-position:  left 10% bottom 40%;
+}
