@@ -14,3 +14,7 @@
 .menu-bar{
     grid-area: header;
 }
+.footer{
+    grid-area: footer;
+    background-color: rgb(67, 50, 43);
+}

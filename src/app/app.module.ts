@@ -7,6 +7,7 @@ import { NoteListComponent } from './components/note-list/note-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   { path: 'all-notes/:user-id', component: NoteListComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     NoteListComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
