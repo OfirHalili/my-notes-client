@@ -1,0 +1,15 @@
+.note-area__container{
+
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas: "note-list main-note";
+    grid-column-gap: 2.5rem;
+    height: 100%;
+}
+.note-list{
+    grid-area: note-list;
+}
+.note-display{
+    grid-area: main-note;
+
+}

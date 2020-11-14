@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 .home-page-container{
     height: 100%;
     display: grid;
     grid-template-rows: 3.5rem 2.5rem auto 2.5rem 4.5rem ;
-    grid-template-columns: 25% 50% auto;
-    grid-template-areas: "header header header"
-                        " . head-line . "
-                          "side side side"
-                          " . . . "
-                          "footer footer footer";
+    grid-template-columns: 30% auto;
+    grid-template-areas: "header header "
+                        " . head-line  "
+                          "main main "
+                          " . .  "
+                          "footer footer ";
     grid-gap: 1rem 2.5rem;
     
 }
 .menu-bar{
     grid-area: header;
+}
+.note-head-line{
+    grid-area: head-line;
+    margin: 0 auto;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+.main-area__container{
+    grid-area: main;
+    
 }
 .side-notes{
     grid-area: side;

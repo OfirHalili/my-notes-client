@@ -10,7 +10,7 @@
 .main-footer__links a{
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
 }
 .main-footer__links a:hover,
 .main-footer__links a:active{
@@ -27,6 +27,6 @@
         justify-content: center;
     }
     .main-footer__link{
-        margin: 1rem 1.5rem;
+        margin: 1rem 2.5rem;
     }
 }

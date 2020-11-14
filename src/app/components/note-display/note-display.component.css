@@ -1,25 +1,29 @@
 .main-note{
-    grid-area: main;
     background-color: rgb(109 85 71 / 30%);
     min-width: 20rem;
     border-radius: 30%;
     padding: 4rem 2rem;
+    height: 100%;
+    margin: 1rem;
     overflow: scroll;
 }
 .note-content{
     color: white;
     margin: 0;
 }
-.main-note form{
-    height: 100%;
-}
+
 .main-note textarea{
     height: 100%;
     width: 100%;
     background-color: #fffdff00;
     
 }
+.main-note textarea:focus{
+    outline: none;
+}
 .main-note .note-content{
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+
 }

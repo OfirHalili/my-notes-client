@@ -1,3 +1,4 @@
+
 .side-notes nav{
     height: 100%;
 }
@@ -25,6 +26,10 @@
 .small-note:hover,
 .small-note:active{
     background-color: rgb(253 202 176 / 55%);
+    cursor: pointer;
+}
+.small-note:focus{
+    background-color: white;
 }
 .side-note__list .small-note a{
     text-decoration: none;
@@ -32,4 +37,5 @@
 .note-content{
     color: white;
     margin: 0;
+
 }

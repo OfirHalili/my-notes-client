@@ -1,8 +1,4 @@
 <main class="main-note">
-    <form>
-        <textarea class = "note-content">
-            {{this.noteContent}}
-        </textarea>
-        <!-- <input type="submit" value="Submit"> -->
-    </form>
+    <textarea  #noteTextArea class = "note-content" (focusout)="this.saveNote(this)">
+    </textarea>
 </main>

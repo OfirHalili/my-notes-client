@@ -9,10 +9,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NoteDisplayComponent } from './components/note-display/note-display.component';
+import { NoteAreaComponent } from './components/note-area/note-area.component';
 
 const routes: Routes = [
-  { path: 'all-notes/:user-id', component: NoteListComponent},
-  { path: 'all-notes', component: NoteListComponent}
+  { path: 'all-notes/:user-id', component: NoteAreaComponent},
+  { path: 'all-notes', component: NoteAreaComponent},
+  { path: '', component: NoteAreaComponent}
 ]
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ const routes: Routes = [
     NoteListComponent,
     MenuBarComponent,
     FooterComponent,
-    NoteDisplayComponent
+    NoteDisplayComponent,
+    NoteAreaComponent
   ],
   imports: [
     BrowserModule,
