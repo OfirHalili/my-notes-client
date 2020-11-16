@@ -13,8 +13,7 @@ import { NoteAreaComponent } from './components/note-area/note-area.component';
 
 const routes: Routes = [
   { path: 'all-notes/:user-id', component: NoteAreaComponent},
-  { path: 'all-notes', component: NoteAreaComponent},
-  { path: '', component: NoteAreaComponent}
+  { path: '**', redirectTo: "all-notes/ofirhalili@gmail.com",pathMatch: "full"}
 ]
 @NgModule({
   declarations: [
